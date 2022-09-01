@@ -1,3 +1,9 @@
 {
-    "cSpell.language": "en,es-ES,es"
+    "cSpell.language": "en,es-ES,es", 
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "cSpell.words": ["autenticación", "FORZA", "openapi", "Renap", "Sider"]
 }
+  
+
