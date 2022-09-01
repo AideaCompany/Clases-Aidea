@@ -9,7 +9,7 @@ const port = process.env.PORT || 3001;
 
 app.use(express.json())
 
-// respond with "hello world" when a GET request is made to the homepage
+
 //leer
 app.get('/usuarios', async function (req, res) {
     const usuarios = await verMiUsuarios()
