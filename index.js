@@ -1,6 +1,6 @@
 // Configuración inicial
 const express = require('express')
-const { verMiUsuarios, agregarUsuarios } = require('./misusuarios')
+const { verMiUsuarios, agregarUsuarios, deleteUsuario } = require('./misusuarios')
 require('dotenv').config()
 
 const app = express()
@@ -23,6 +23,12 @@ app.post('/usuarios', function (request, response) {
   }
   response.send('Usuarios agregados con exito')
 })
+
+app.delete('/usuarios/:index', async function (req, res) {
+  const usuarios = await deleteUsuario(req.params.index) // params va a retornar los parametros de la url, este caso index
+  res.json(usuarios)
+})
+
 // //actualizar
 // app.put()
 // //delete
